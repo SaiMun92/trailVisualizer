@@ -2,3 +2,8 @@
 html, body, #root {
   height: 100%;
 }
+
+#map {
+  width: 1000px;
+  height: 400px;
+}

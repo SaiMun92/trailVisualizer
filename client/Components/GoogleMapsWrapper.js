@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 
-class Map extends Component {
-  constructor(props) {
-    super(props);
-  }
+class Maps extends Component {
 
   componentDidMount() {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -13,6 +10,10 @@ class Map extends Component {
   }
 
   render() {
-    return <div id="map"></div>;
+    return (
+      <div id="map" className="map-container"></div>
+    );
   }
 };
+
+export default Maps;

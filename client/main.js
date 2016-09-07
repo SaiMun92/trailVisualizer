@@ -7,7 +7,7 @@ import App from './App';
 import Home from './Components/Home';
 import About from './Components/About';
 import Contact from './Components/Contact';
-import GoogleMaps from './Components/GoogleMapsWrapper';
+import Maps from './Components/GoogleMapsWrapper';
 import '../imports/Accounts_Config'
 
 // Route path="/" component={App} is to display the same thing that the user will see throughout.
@@ -19,7 +19,7 @@ const routes = (
 			<IndexRoute component={Home} />
 			<Route path="about" component={About} />
 			<Route path="contact" component={Contact} />
-			<Route path="maps" component={GoogleMaps} />
+			<Route path="maps" component={Maps} />
 		</Route>
 	</Router>
 )
