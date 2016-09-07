@@ -1,0 +1,30 @@
+// Date Log - 26th Aug 2016
+
+Bug -
+Collections seems not to be working, try to use a working copy to see whether i can insert data
+into a Meteor mongo collection.
+
+
+Fix - Managed to fix the bug that is causing the meteor mongodb to not show up.
+    - User must declare the variables in function(variables) to insert into the mongoDB
+    - User must insert into the db to physically create the mongo Collection.
+Fix - Able to store and fetch data from mongoDB.
+
+
+packages installed:
+1. react
+2. react-dom
+3. meteor remove insecure
+4. meteor remove autopublish
+5. npm install --save react-addons-pure-render-mixin
+6. meteor add react-meteor-data
+7. meteor add accounts-ui accounts-password
+8. meteor add check: for using the function e.g. check(text, String)
+
+
+
+
+componentWillMount() - Invoked once both on the client and server,
+                        immediately before the initial rendering occurs.
+componentDidMount() - Invoked once only on the client, immediately after the initial rendering occurs
+componentWillUnMount() - Invoked immediately before a component is unmounted from the DOM.
